@@ -1,8 +1,10 @@
 plugins {
     id 'java'
+    id 'aplication'
 }
 
 group = 'org.example'
+//group = 'StartGradle'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -10,10 +12,26 @@ repositories {
 }
 
 dependencies {
+
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-}
+    implementation 'org.apache.commons:commons-math3:3.6.1'
 
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+    implementation group: 'org.apache.logging.log4j',name: 'log4j-core', version: '2.14.0'
+    implementation group: 'org.apache.logging.log4j',name: 'log4j-api', version: '2.14.0'
+
+    implementation group: 'com.google.guava',name :'guava',version: '30.0.1-jre'
+}
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'ComputerShopMain'
+        )
+    }
+    from(configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) })
+}
 test {
     useJUnitPlatform()
 }
