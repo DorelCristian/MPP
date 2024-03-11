@@ -5,6 +5,12 @@
       <module name="demo" target="17" />
       <module name="demo.main" target="17" />
       <module name="demo.test" target="17" />
+      <module name="LAB3" target="17" />
+      <module name="LAB3.main" target="17" />
+      <module name="LAB3.test" target="17" />
+      <module name="proiectMPP" target="17" />
+      <module name="proiectMPP.main" target="17" />
+      <module name="proiectMPP.test" target="17" />
       <module name="StartGradle" target="17" />
       <module name="StartGradle.main" target="17" />
       <module name="StartGradle.test" target="17" />

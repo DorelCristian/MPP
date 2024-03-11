@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LAB3.iml" filepath="$PROJECT_DIR$/LAB3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LAB3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LAB3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LAB3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LAB3.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MPP.iml" filepath="$PROJECT_DIR$/.idea/MPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/StartGradle.iml" filepath="$PROJECT_DIR$/StartGradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/StartGradle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/StartGradle.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/StartGradle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/StartGradle.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proiectMPP.iml" filepath="$PROJECT_DIR$/proiectMPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proiectMPP.main.iml" filepath="$PROJECT_DIR$/.idea/modules/proiectMPP.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proiectMPP.test.iml" filepath="$PROJECT_DIR$/.idea/modules/proiectMPP.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled.iml" filepath="$PROJECT_DIR$/untitled.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled.main.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled.test.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled.test.iml" />

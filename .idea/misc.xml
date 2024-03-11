@@ -2,6 +2,8 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo" />
+    <file type="web" url="file://$PROJECT_DIR$/LAB3" />
+    <file type="web" url="file://$PROJECT_DIR$/proiectMPP" />
     <file type="web" url="file://$PROJECT_DIR$/StartGradle" />
     <file type="web" url="file://$PROJECT_DIR$/untitled" />
   </component>

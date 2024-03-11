@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'aplication'
+    id 'application'
 }
 
 group = 'org.example'
@@ -22,15 +22,19 @@ dependencies {
     implementation group: 'org.apache.logging.log4j',name: 'log4j-core', version: '2.14.0'
     implementation group: 'org.apache.logging.log4j',name: 'log4j-api', version: '2.14.0'
 
-    implementation group: 'com.google.guava',name :'guava',version: '30.0.1-jre'
+    implementation group: 'com.google.guava',name :'guava',version: '31.0.1-jre'
 }
 jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
         attributes(
                 'Main-Class': 'ComputerShopMain'
         )
     }
-    from(configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) })
+    from{
+
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
 test {
     useJUnitPlatform()
