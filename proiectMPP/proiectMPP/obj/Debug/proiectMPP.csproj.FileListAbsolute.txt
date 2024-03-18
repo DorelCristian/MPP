@@ -1,0 +1,9 @@
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\bin\Debug\proiectMPP.exe.config
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\bin\Debug\proiectMPP.exe
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\bin\Debug\proiectMPP.pdb
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\obj\Debug\proiectMPP.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\obj\Debug\proiectMPP.Properties.Resources.resources
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\obj\Debug\proiectMPP.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\obj\Debug\proiectMPP.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\obj\Debug\proiectMPP.exe
+C:\Users\Asus\source\repos\proiectMPP\proiectMPP\obj\Debug\proiectMPP.pdb
