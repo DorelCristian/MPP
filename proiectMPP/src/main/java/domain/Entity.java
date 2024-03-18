@@ -1,15 +1,15 @@
 package domain;
 import java.io.Serializable;
 import java.util.Objects;
-public class Entity<Long>implements Serializable {
-    protected Long id;
-    public Long getId()
+public class Entity<ID>implements Serializable {
+    protected ID id;
+    public ID getId()
     {
         return id;
     }
-    public void setId(Long id)
+    public void setId(ID id)
     {
-        this.id=(Long)id;
+        this.id=id;
     }
     @Override
     public boolean equals(Object o) {

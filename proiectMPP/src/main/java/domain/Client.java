@@ -4,9 +4,11 @@ import java.util.Objects;
 
 public class Client extends Entity<Long>{
     private String nume;
+    private String password;
 
-    public Client(String nume) {
+    public Client(String nume,String password) {
         this.nume = nume;
+        this.password=password;
     }
 
     public String getNume() {
@@ -15,6 +17,12 @@ public class Client extends Entity<Long>{
 
     public void setNume(String nume) {
         this.nume = nume;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

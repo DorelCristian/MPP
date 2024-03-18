@@ -8,7 +8,7 @@ public class Cursa extends Entity<Long>{
     private String destinatie;
     private Date date;
     private Time ora;
-    private int locuriDisponibile;
+    //private int locuriDisponibile;
 
     public String getDestinatie() {
         return destinatie;
@@ -18,12 +18,12 @@ public class Cursa extends Entity<Long>{
         this.destinatie = destinatie;
     }
 
-    public Cursa(String destinatie, Date date, Time ora, int locuriDisponibile)
+    public Cursa(String destinatie, Date date, Time ora)
     {
         this.destinatie=destinatie;
         this.date=date;
         this.ora=ora;
-        this.locuriDisponibile=locuriDisponibile;
+        //this.locuriDisponibile=locuriDisponibile;
     }
 
     public Time getOra() {
@@ -38,13 +38,6 @@ public class Cursa extends Entity<Long>{
         return date;
     }
 
-    public int getLocuriDisponibile() {
-        return locuriDisponibile;
-    }
-
-    public void setLocuriDisponibile(int locuriDisponibile) {
-        this.locuriDisponibile = locuriDisponibile;
-    }
 
     public void setDate(Date date) {
         this.date = date;
@@ -56,12 +49,12 @@ public class Cursa extends Entity<Long>{
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Cursa cursa = (Cursa) o;
-        return locuriDisponibile == cursa.locuriDisponibile && Objects.equals(destinatie, cursa.destinatie) && Objects.equals(date, cursa.date) && Objects.equals(ora, cursa.ora);
+        return Objects.equals(destinatie, cursa.destinatie) && Objects.equals(date, cursa.date) && Objects.equals(ora, cursa.ora);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), destinatie, date, ora, locuriDisponibile);
+        return Objects.hash(super.hashCode(), destinatie, date, ora);
     }
 
     @Override
@@ -70,7 +63,6 @@ public class Cursa extends Entity<Long>{
                 "destinatie='" + destinatie + '\'' +
                 ", date=" + date +
                 ", ora=" + ora +
-                ", locuriDisponibile=" + locuriDisponibile +
                 '}';
     }
 }

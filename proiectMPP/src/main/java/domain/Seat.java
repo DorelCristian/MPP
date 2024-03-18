@@ -3,11 +3,12 @@ package domain;
 import java.util.Objects;
 
 public class Seat extends Entity<Long>{
-    private int idRezervare;
+   // private int idRezervare;
+    Rezervare rezervare;
     private int seatNumber;
-    public Seat(int idRezervare,int seatNumber)
+    public Seat(Rezervare rezervare, int seatNumber)
     {
-        this.idRezervare=idRezervare;
+        this.rezervare=rezervare;
         this.seatNumber=seatNumber;
     }
 
@@ -19,12 +20,11 @@ public class Seat extends Entity<Long>{
         this.seatNumber = seatNumber;
     }
 
-    public int getIdRezervare() {
-        return idRezervare;
+    public Rezervare getRezervare() {
+        return rezervare;
     }
-
-    public void setIdRezervare(int idRezervare) {
-        this.idRezervare = idRezervare;
+    public void setRezervare(Rezervare rezervare) {
+        this.rezervare = rezervare;
     }
 
     @Override
@@ -33,18 +33,18 @@ public class Seat extends Entity<Long>{
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Seat seat = (Seat) o;
-        return idRezervare == seat.idRezervare && seatNumber == seat.seatNumber;
+        return seatNumber == seat.seatNumber && Objects.equals(rezervare, seat.rezervare);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), idRezervare, seatNumber);
+        return Objects.hash(super.hashCode(), rezervare, seatNumber);
     }
 
     @Override
     public String toString() {
         return "Seat{" +
-                "idRezervare=" + idRezervare +
+                "rezervare=" + rezervare +
                 ", seatNumber=" + seatNumber +
                 '}';
     }

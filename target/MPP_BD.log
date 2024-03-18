@@ -254,3 +254,313 @@
 11 Mar 2024 17:29:25,680 TRACE org.example.JdbcUtils 48 getConnection - Enter
 11 Mar 2024 17:29:25,680 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
 11 Mar 2024 17:29:25,681 TRACE org.example.CarsDBRepository 143 findAll - Exit with([Id=1 Dacia x5 2018, Id=2 Tesla Model S 2019, Id=3 Tesla Model S 2019, Id=4 Tesla Model S 2019, Id=5 Tesla Model S 2019, Id=6 bmw x5 2018])
+11 Mar 2024 17:47:42,332 INFO  org.example.CarsDBRepository 25 <init> - Initializing CarsDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/cars.db, jdbc.pass=} 
+11 Mar 2024 17:47:42,350 TRACE org.example.CarsDBRepository 87 add - Enter saving task Id=0 Tesla Model S 2019 
+11 Mar 2024 17:47:42,351 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:42,351 TRACE org.example.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:47:42,352 INFO  org.example.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/cars.db
+11 Mar 2024 17:47:42,353 INFO  org.example.JdbcUtils 31 getNewConnection - user: 
+11 Mar 2024 17:47:42,353 INFO  org.example.JdbcUtils 32 getNewConnection - pass: 
+11 Mar 2024 17:47:45,133 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,162 TRACE org.example.CarsDBRepository 94 add - Saved 1 instances
+11 Mar 2024 17:47:45,163 TRACE org.example.CarsDBRepository 100 add - Exit
+11 Mar 2024 17:47:45,164 TRACE org.example.CarsDBRepository 124 findAll - Enter
+11 Mar 2024 17:47:45,165 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:45,166 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,174 TRACE org.example.CarsDBRepository 143 findAll - Exit with([Id=1 Dacia x5 2018, Id=2 Tesla Model S 2019, Id=3 Tesla Model S 2019, Id=4 Tesla Model S 2019, Id=5 Tesla Model S 2019, Id=6 bmw x5 2018, Id=7 Tesla Model S 2019])
+11 Mar 2024 17:47:45,176 TRACE org.example.CarsDBRepository 32 findByManufacturer - Enter finding tasks by manufacturer Tesla
+11 Mar 2024 17:47:45,177 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:45,177 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,185 TRACE org.example.CarsDBRepository 59 findBetweenYears - Enter finding tasks between years 2018 2020
+11 Mar 2024 17:47:45,186 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:45,187 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,190 TRACE org.example.CarsDBRepository 87 add - Enter saving task Id=0 bmw x5 2018 
+11 Mar 2024 17:47:45,191 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:45,192 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,209 TRACE org.example.CarsDBRepository 94 add - Saved 1 instances
+11 Mar 2024 17:47:45,209 TRACE org.example.CarsDBRepository 100 add - Exit
+11 Mar 2024 17:47:45,210 TRACE org.example.CarsDBRepository 105 update - Enter updating task with id 1 
+11 Mar 2024 17:47:45,210 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:45,211 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,212 TRACE org.example.CarsDBRepository 113 update - Updated 1 instances
+11 Mar 2024 17:47:45,213 TRACE org.example.CarsDBRepository 124 findAll - Enter
+11 Mar 2024 17:47:45,214 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:45,215 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:45,217 TRACE org.example.CarsDBRepository 143 findAll - Exit with([Id=1 Dacia x5 2018, Id=2 Tesla Model S 2019, Id=3 Tesla Model S 2019, Id=4 Tesla Model S 2019, Id=5 Tesla Model S 2019, Id=6 bmw x5 2018, Id=7 Tesla Model S 2019, Id=8 bmw x5 2018])
+11 Mar 2024 17:47:48,654 INFO  org.example.CarsDBRepository 25 <init> - Initializing CarsDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/cars.db, jdbc.pass=} 
+11 Mar 2024 17:47:48,708 TRACE org.example.CarsDBRepository 87 add - Enter saving task Id=0 Tesla Model S 2019 
+11 Mar 2024 17:47:48,711 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:48,712 TRACE org.example.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:47:48,715 INFO  org.example.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/cars.db
+11 Mar 2024 17:47:48,716 INFO  org.example.JdbcUtils 31 getNewConnection - user: 
+11 Mar 2024 17:47:48,717 INFO  org.example.JdbcUtils 32 getNewConnection - pass: 
+11 Mar 2024 17:47:50,086 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,167 TRACE org.example.CarsDBRepository 94 add - Saved 1 instances
+11 Mar 2024 17:47:50,168 TRACE org.example.CarsDBRepository 100 add - Exit
+11 Mar 2024 17:47:50,169 TRACE org.example.CarsDBRepository 124 findAll - Enter
+11 Mar 2024 17:47:50,170 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:50,170 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,183 TRACE org.example.CarsDBRepository 143 findAll - Exit with([Id=1 Dacia x5 2018, Id=2 Tesla Model S 2019, Id=3 Tesla Model S 2019, Id=4 Tesla Model S 2019, Id=5 Tesla Model S 2019, Id=6 bmw x5 2018, Id=7 Tesla Model S 2019, Id=8 bmw x5 2018, Id=9 Tesla Model S 2019])
+11 Mar 2024 17:47:50,187 TRACE org.example.CarsDBRepository 32 findByManufacturer - Enter finding tasks by manufacturer Tesla
+11 Mar 2024 17:47:50,188 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:50,189 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,207 TRACE org.example.CarsDBRepository 59 findBetweenYears - Enter finding tasks between years 2018 2020
+11 Mar 2024 17:47:50,208 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:50,209 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,217 TRACE org.example.CarsDBRepository 87 add - Enter saving task Id=0 bmw x5 2018 
+11 Mar 2024 17:47:50,221 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:50,222 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,269 TRACE org.example.CarsDBRepository 94 add - Saved 1 instances
+11 Mar 2024 17:47:50,270 TRACE org.example.CarsDBRepository 100 add - Exit
+11 Mar 2024 17:47:50,271 TRACE org.example.CarsDBRepository 105 update - Enter updating task with id 1 
+11 Mar 2024 17:47:50,271 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:50,272 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,273 TRACE org.example.CarsDBRepository 113 update - Updated 1 instances
+11 Mar 2024 17:47:50,273 TRACE org.example.CarsDBRepository 124 findAll - Enter
+11 Mar 2024 17:47:50,275 TRACE org.example.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:47:50,276 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+11 Mar 2024 17:47:50,279 TRACE org.example.CarsDBRepository 143 findAll - Exit with([Id=1 Dacia x5 2018, Id=2 Tesla Model S 2019, Id=3 Tesla Model S 2019, Id=4 Tesla Model S 2019, Id=5 Tesla Model S 2019, Id=6 bmw x5 2018, Id=7 Tesla Model S 2019, Id=8 bmw x5 2018, Id=9 Tesla Model S 2019, Id=10 bmw x5 2018])
+18 Mar 2024 13:23:43,642 INFO  org.example.CarsDBRepository 25 <init> - Initializing CarsDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite, jdbc.pass=} 
+18 Mar 2024 13:23:43,721 TRACE org.example.CarsDBRepository 87 add - Enter saving task Id=0 Tesla Model S 2019 
+18 Mar 2024 13:23:43,721 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:43,721 TRACE org.example.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 13:23:43,722 INFO  org.example.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite
+18 Mar 2024 13:23:43,722 INFO  org.example.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 13:23:43,722 INFO  org.example.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 13:23:52,101 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,106 ERROR org.example.CarsDBRepository 97 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,106 TRACE org.example.CarsDBRepository 100 add - Exit
+18 Mar 2024 13:23:52,107 TRACE org.example.CarsDBRepository 124 findAll - Enter
+18 Mar 2024 13:23:52,107 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:52,107 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,108 ERROR org.example.CarsDBRepository 140 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,108 TRACE org.example.CarsDBRepository 143 findAll - Exit with([])
+18 Mar 2024 13:23:52,109 TRACE org.example.CarsDBRepository 32 findByManufacturer - Enter finding tasks by manufacturer Tesla
+18 Mar 2024 13:23:52,109 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:52,109 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,110 ERROR org.example.CarsDBRepository 50 findByManufacturer - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,111 TRACE org.example.CarsDBRepository 59 findBetweenYears - Enter finding tasks between years 2018 2020
+18 Mar 2024 13:23:52,112 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:52,112 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,112 ERROR org.example.CarsDBRepository 78 findBetweenYears - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,112 TRACE org.example.CarsDBRepository 87 add - Enter saving task Id=0 bmw x5 2018 
+18 Mar 2024 13:23:52,113 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:52,113 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,113 ERROR org.example.CarsDBRepository 97 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,113 TRACE org.example.CarsDBRepository 100 add - Exit
+18 Mar 2024 13:23:52,113 TRACE org.example.CarsDBRepository 105 update - Enter updating task with id 1 
+18 Mar 2024 13:23:52,113 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:52,114 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,114 ERROR org.example.CarsDBRepository 115 update - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,114 TRACE org.example.CarsDBRepository 124 findAll - Enter
+18 Mar 2024 13:23:52,114 TRACE org.example.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 13:23:52,115 TRACE org.example.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@dc7df28)
+18 Mar 2024 13:23:52,115 ERROR org.example.CarsDBRepository 140 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+18 Mar 2024 13:23:52,115 TRACE org.example.CarsDBRepository 143 findAll - Exit with([])
+18 Mar 2024 16:27:41,039 INFO  repo.ClientDBRepository 20 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP, jdbc.pass=} 
+18 Mar 2024 16:27:41,046 TRACE repo.ClientDBRepository 26 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:27:41,046 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:27:41,047 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:27:41,047 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP
+18 Mar 2024 16:27:41,047 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:27:41,048 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:27:41,291 ERROR repo.JdbcUtils 41 getNewConnection - org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
+18 Mar 2024 16:27:41,291 TRACE repo.JdbcUtils 57 getConnection - Exit
+18 Mar 2024 16:29:15,684 INFO  repo.ClientDBRepository 20 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP, jdbc.pass=} 
+18 Mar 2024 16:29:15,689 TRACE repo.ClientDBRepository 26 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:29:15,689 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:29:15,689 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:29:15,690 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP
+18 Mar 2024 16:29:15,690 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:29:15,690 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:29:17,148 ERROR repo.JdbcUtils 41 getNewConnection - org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
+18 Mar 2024 16:29:17,149 TRACE repo.JdbcUtils 57 getConnection - Exit
+18 Mar 2024 16:29:17,149 TRACE repo.ClientDBRepository 47 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:29:17,150 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:29:17,150 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:29:17,150 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP
+18 Mar 2024 16:29:17,150 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:29:17,150 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:29:17,151 ERROR repo.JdbcUtils 41 getNewConnection - org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
+18 Mar 2024 16:29:17,151 TRACE repo.JdbcUtils 57 getConnection - Exit
+18 Mar 2024 16:33:10,988 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP, jdbc.pass=} 
+18 Mar 2024 16:33:10,994 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:33:10,995 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:33:10,995 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:33:10,995 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP
+18 Mar 2024 16:33:10,996 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:33:10,996 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:33:11,515 ERROR repo.JdbcUtils 41 getNewConnection - org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
+18 Mar 2024 16:33:11,516 TRACE repo.JdbcUtils 57 getConnection - Exit
+18 Mar 2024 16:33:11,516 TRACE repo.ClientDBRepository 49 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:33:11,516 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:33:11,516 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:33:11,517 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP
+18 Mar 2024 16:33:11,517 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:33:11,517 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:33:11,517 ERROR repo.JdbcUtils 41 getNewConnection - org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
+18 Mar 2024 16:33:11,518 TRACE repo.JdbcUtils 57 getConnection - Exit
+18 Mar 2024 16:33:11,518 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:33:11,518 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:33:11,518 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:33:11,518 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/proiectMPP
+18 Mar 2024 16:33:11,518 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:33:11,518 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:33:11,519 ERROR repo.JdbcUtils 41 getNewConnection - org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
+18 Mar 2024 16:33:11,519 TRACE repo.JdbcUtils 57 getConnection - Exit
+18 Mar 2024 16:36:41,013 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite, jdbc.pass=} 
+18 Mar 2024 16:36:41,023 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:36:41,024 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:36:41,024 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:36:41,025 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite
+18 Mar 2024 16:36:41,025 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:36:41,026 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:36:42,033 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:36:42,040 ERROR repo.ClientDBRepository 40 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:36:42,041 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 16:36:42,041 TRACE repo.ClientDBRepository 49 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:36:42,041 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:36:42,041 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:36:42,042 ERROR repo.ClientDBRepository 61 update - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:36:42,042 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:36:42,042 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:36:42,042 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:36:42,043 ERROR repo.ClientDBRepository 92 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:36:42,043 TRACE repo.ClientDBRepository 95 findAll - Exit with([])
+18 Mar 2024 16:37:38,263 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite, jdbc.pass=} 
+18 Mar 2024 16:37:38,267 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:37:38,268 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:37:38,268 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:37:38,268 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite
+18 Mar 2024 16:37:38,268 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:37:38,268 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:37:39,218 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:37:39,222 ERROR repo.ClientDBRepository 40 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:37:39,222 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 16:37:39,223 TRACE repo.ClientDBRepository 49 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:37:39,223 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:37:39,223 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:37:39,223 ERROR repo.ClientDBRepository 61 update - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:37:39,224 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:37:39,224 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:37:39,224 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:37:39,224 ERROR repo.ClientDBRepository 92 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:37:39,225 TRACE repo.ClientDBRepository 95 findAll - Exit with([])
+18 Mar 2024 16:38:01,711 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite, jdbc.pass=} 
+18 Mar 2024 16:38:01,716 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:38:01,716 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:38:01,716 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:38:01,717 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite
+18 Mar 2024 16:38:01,717 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:38:01,717 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:38:01,993 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:38:02,000 ERROR repo.ClientDBRepository 40 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:38:02,001 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 16:38:02,001 TRACE repo.ClientDBRepository 49 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:38:02,002 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:38:02,002 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:38:02,003 ERROR repo.ClientDBRepository 61 update - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:38:02,004 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:38:02,004 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:38:02,004 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:38:02,005 ERROR repo.ClientDBRepository 92 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:38:02,006 TRACE repo.ClientDBRepository 95 findAll - Exit with([])
+18 Mar 2024 16:42:13,992 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite, jdbc.pass=} 
+18 Mar 2024 16:42:13,997 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:42:13,997 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:42:13,998 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:42:13,998 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersAsusDesktopMPPidentifier.sqlite
+18 Mar 2024 16:42:13,998 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:42:13,998 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:42:14,393 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:42:14,408 ERROR repo.ClientDBRepository 40 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:42:14,409 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 16:42:14,411 TRACE repo.ClientDBRepository 49 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:42:14,412 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:42:14,413 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:42:14,414 ERROR repo.ClientDBRepository 61 update - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:42:14,415 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:42:14,415 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:42:14,416 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:42:14,417 ERROR repo.ClientDBRepository 92 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Client)
+18 Mar 2024 16:42:14,418 TRACE repo.ClientDBRepository 95 findAll - Exit with([])
+18 Mar 2024 16:44:01,867 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 16:44:01,872 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:44:01,872 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:44:01,872 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:44:01,873 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 16:44:01,873 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:44:01,873 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:44:02,143 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:44:02,161 TRACE repo.ClientDBRepository 38 save - Saved 1 instances
+18 Mar 2024 16:44:02,162 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 16:44:02,162 TRACE repo.ClientDBRepository 49 update - Enter updating client Client{nume='Andeea'}
+18 Mar 2024 16:44:02,162 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:44:02,162 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:44:02,164 ERROR repo.ClientDBRepository 61 update - java.lang.NullPointerException: Cannot invoke "java.lang.Long.toString()" because the return value of "domain.Client.getId()" is null
+18 Mar 2024 16:44:02,164 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:44:02,165 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:44:02,165 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:44:02,168 TRACE repo.ClientDBRepository 95 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}])
+18 Mar 2024 16:45:19,935 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 16:45:19,939 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 16:45:19,940 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:45:19,940 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 16:45:19,940 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 16:45:19,940 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 16:45:19,941 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 16:45:20,353 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:45:20,368 TRACE repo.ClientDBRepository 38 save - Saved 1 instances
+18 Mar 2024 16:45:20,368 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 16:45:20,368 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 16:45:20,369 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 16:45:20,369 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 16:45:20,371 TRACE repo.ClientDBRepository 95 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}, Client{nume='Diana'}])
+18 Mar 2024 17:45:13,554 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 17:45:13,562 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 17:45:13,562 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 17:45:13,563 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 17:45:13,563 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 17:45:13,564 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 17:45:13,564 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 17:45:19,183 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 17:45:19,201 TRACE repo.ClientDBRepository 38 save - Saved 1 instances
+18 Mar 2024 17:45:19,202 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 17:45:19,203 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 17:45:19,203 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 17:45:19,203 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 17:45:19,207 TRACE repo.ClientDBRepository 95 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}])
+18 Mar 2024 17:45:19,208 INFO  repo.CursaDBRepository 22 <init> - Initializing CursaDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 17:45:19,219 TRACE repo.CursaDBRepository 28 save - Enter saving cursa Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}
+18 Mar 2024 17:45:19,220 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 17:45:19,220 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 17:45:19,220 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 17:45:19,220 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 17:45:19,220 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 17:45:19,222 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57db2b13)
+18 Mar 2024 17:45:19,224 ERROR repo.CursaDBRepository 41 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (table Cursa has no column named data)
+18 Mar 2024 17:45:19,225 TRACE repo.CursaDBRepository 44 save - Exit
+18 Mar 2024 17:46:17,328 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 17:46:17,333 TRACE repo.ClientDBRepository 28 save - Enter saving client Client{nume='Diana'}
+18 Mar 2024 17:46:17,334 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 17:46:17,334 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 17:46:17,334 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 17:46:17,335 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 17:46:17,335 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 17:46:17,882 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 17:46:17,897 TRACE repo.ClientDBRepository 38 save - Saved 1 instances
+18 Mar 2024 17:46:17,897 TRACE repo.ClientDBRepository 43 save - Exit
+18 Mar 2024 17:46:17,898 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 17:46:17,898 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 17:46:17,898 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 17:46:17,900 TRACE repo.ClientDBRepository 95 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}])
+18 Mar 2024 17:46:17,901 INFO  repo.CursaDBRepository 22 <init> - Initializing CursaDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 17:46:17,911 TRACE repo.CursaDBRepository 28 save - Enter saving cursa Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}
+18 Mar 2024 17:46:17,911 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 17:46:17,911 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 17:46:17,911 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 17:46:17,911 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 17:46:17,911 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 17:46:17,912 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57db2b13)
+18 Mar 2024 17:46:17,919 TRACE repo.CursaDBRepository 39 save - Saved 1 instances
+18 Mar 2024 17:46:17,919 TRACE repo.CursaDBRepository 44 save - Exit

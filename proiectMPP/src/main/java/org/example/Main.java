@@ -1,19 +1,52 @@
 package org.example;
+import java.sql.Time;
+import java.util.Date;
+import domain.Client;
+import domain.Cursa;
+import repo.ClientDBRepository;
+import repo.ClientRepo;
+import repo.CursaDBRepository;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Time;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Properties;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        Properties props=new Properties();
+        try {
+            props.load(new FileReader("bd.config"));
+        } catch (IOException e) {
+            System.out.println("Cannot find bd.config "+e);
         }
+       // ClientRepo clientRepo= (ClientRepo) new ClientDBRepository(props);
+        ClientDBRepository clientRepo=new ClientDBRepository(props);
+        Client client=new Client("Diana","1234");
+
+        //clientRepo.save(client);
+        System.out.println("Toate clientii din db");
+        System.out.println(client);
+
+        System.out.println("Toate clientii din db dupa update");
+        List<Client> clients=clientRepo.findAll();
+        for(Client c:clients)
+            System.out.println(c);
+
+        CursaDBRepository cursaDBRepository=new CursaDBRepository(props);
+        LocalDateTime date=LocalDateTime.of(2020,12,12,12,30);
+        Time time=new Time(12,30,0);
+        Date date1=new Date(2020,12,12);
+        Cursa cursa=new Cursa("Cluj",date1,time);
+        cursaDBRepository.save(cursa);
+        System.out.println("Toate cursele din db");
+
+
+
+
     }
 }
