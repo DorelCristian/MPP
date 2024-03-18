@@ -100,4 +100,9 @@ public class RezervareDBRepository implements IRepository{
     public Object findOne(Object o) {
         return null;
     }
+
+    @Override
+    public Object findOne(Client client) {
+        return null;
+    }
 }

@@ -609,3 +609,41 @@
 18 Mar 2024 22:48:26,814 TRACE repo.JdbcUtils 48 getConnection - Enter
 18 Mar 2024 22:48:26,815 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
 18 Mar 2024 22:48:26,819 TRACE repo.CursaDBRepository 95 findAll - Exit with([Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}])
+18 Mar 2024 23:00:17,658 INFO  repo.ClientDBRepository 21 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 23:00:17,664 TRACE repo.ClientDBRepository 74 findAll - Enter
+18 Mar 2024 23:00:17,664 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 23:00:17,664 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 23:00:17,664 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 23:00:17,665 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 23:00:17,665 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 23:00:25,421 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 23:00:25,432 TRACE repo.ClientDBRepository 94 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}])
+18 Mar 2024 23:00:25,433 INFO  repo.CursaDBRepository 23 <init> - Initializing CursaDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 23:00:25,450 TRACE repo.CursaDBRepository 29 save - Enter saving cursa Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}
+18 Mar 2024 23:00:25,450 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 23:00:25,451 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 23:00:25,451 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 23:00:25,452 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 23:00:25,452 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 23:00:25,454 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+18 Mar 2024 23:00:25,465 TRACE repo.CursaDBRepository 40 save - Saved 1 instances
+18 Mar 2024 23:00:25,465 TRACE repo.CursaDBRepository 45 save - Exit
+18 Mar 2024 23:00:25,465 TRACE repo.CursaDBRepository 77 findAll - Enter
+18 Mar 2024 23:00:25,466 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 23:00:25,466 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+18 Mar 2024 23:00:25,468 TRACE repo.CursaDBRepository 96 findAll - Exit with([Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}])
+18 Mar 2024 23:00:25,470 INFO  repo.RezervareDBRepository 24 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 23:00:25,475 TRACE repo.RezervareDBRepository 29 save - Enter saving rezervare Rezervare{client=Client{nume='Diana'}, cursa=Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Locuri=3}
+18 Mar 2024 23:00:25,475 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 23:00:25,475 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 23:00:25,475 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 23:00:25,475 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 23:00:25,475 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 23:00:25,477 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66ea810)
+18 Mar 2024 23:00:25,479 ERROR repo.RezervareDBRepository 41 save - java.lang.NullPointerException: Cannot invoke "java.lang.Long.intValue()" because the return value of "domain.Client.getId()" is null
+18 Mar 2024 23:00:25,480 TRACE repo.RezervareDBRepository 44 save - Exit
+18 Mar 2024 23:00:25,480 TRACE repo.RezervareDBRepository 29 save - Enter saving rezervare Rezervare{client=Client{nume='Diana'}, cursa=Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Locuri=4}
+18 Mar 2024 23:00:25,480 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 23:00:25,480 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66ea810)
+18 Mar 2024 23:00:25,480 ERROR repo.RezervareDBRepository 41 save - java.lang.NullPointerException: Cannot invoke "java.lang.Long.intValue()" because the return value of "domain.Client.getId()" is null
+18 Mar 2024 23:00:25,481 TRACE repo.RezervareDBRepository 44 save - Exit
