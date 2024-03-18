@@ -564,3 +564,48 @@
 18 Mar 2024 17:46:17,912 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57db2b13)
 18 Mar 2024 17:46:17,919 TRACE repo.CursaDBRepository 39 save - Saved 1 instances
 18 Mar 2024 17:46:17,919 TRACE repo.CursaDBRepository 44 save - Exit
+18 Mar 2024 22:47:20,888 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 22:47:20,906 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 22:47:20,906 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 22:47:20,907 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 22:47:20,907 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 22:47:20,907 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 22:47:20,907 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 22:47:25,382 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 22:47:25,395 TRACE repo.ClientDBRepository 95 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}])
+18 Mar 2024 22:47:25,397 INFO  repo.CursaDBRepository 22 <init> - Initializing CursaDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 22:47:25,408 TRACE repo.CursaDBRepository 28 save - Enter saving cursa Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}
+18 Mar 2024 22:47:25,408 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 22:47:25,409 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 22:47:25,409 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 22:47:25,410 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 22:47:25,410 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 22:47:25,411 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+18 Mar 2024 22:47:25,420 TRACE repo.CursaDBRepository 39 save - Saved 1 instances
+18 Mar 2024 22:47:25,420 TRACE repo.CursaDBRepository 44 save - Exit
+18 Mar 2024 22:47:25,420 TRACE repo.CursaDBRepository 76 findAll - Enter
+18 Mar 2024 22:47:25,420 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 22:47:25,421 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+18 Mar 2024 22:48:25,985 INFO  repo.ClientDBRepository 22 <init> - Initializing ClientDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 22:48:25,993 TRACE repo.ClientDBRepository 75 findAll - Enter
+18 Mar 2024 22:48:25,993 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 22:48:25,993 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 22:48:25,994 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 22:48:25,994 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 22:48:25,994 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 22:48:26,782 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57bc27f5)
+18 Mar 2024 22:48:26,793 TRACE repo.ClientDBRepository 95 findAll - Exit with([Client{nume='Alin'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}, Client{nume='Diana'}])
+18 Mar 2024 22:48:26,794 INFO  repo.CursaDBRepository 22 <init> - Initializing CursaDBRepository with properties: {jdbc.user=, jdbc.url=jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite, jdbc.pass=} 
+18 Mar 2024 22:48:26,802 TRACE repo.CursaDBRepository 28 save - Enter saving cursa Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}
+18 Mar 2024 22:48:26,803 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 22:48:26,803 TRACE repo.JdbcUtils 25 getNewConnection - Enter
+18 Mar 2024 22:48:26,803 INFO  repo.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/Asus/Desktop/MPP/identifier.sqlite
+18 Mar 2024 22:48:26,803 INFO  repo.JdbcUtils 31 getNewConnection - user: 
+18 Mar 2024 22:48:26,803 INFO  repo.JdbcUtils 32 getNewConnection - pass: 
+18 Mar 2024 22:48:26,804 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+18 Mar 2024 22:48:26,814 TRACE repo.CursaDBRepository 39 save - Saved 1 instances
+18 Mar 2024 22:48:26,814 TRACE repo.CursaDBRepository 44 save - Exit
+18 Mar 2024 22:48:26,814 TRACE repo.CursaDBRepository 76 findAll - Enter
+18 Mar 2024 22:48:26,814 TRACE repo.JdbcUtils 48 getConnection - Enter
+18 Mar 2024 22:48:26,815 TRACE repo.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2657d4dd)
+18 Mar 2024 22:48:26,819 TRACE repo.CursaDBRepository 95 findAll - Exit with([Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}, Cursa{destinatie='Cluj', date=Wed Jan 12 00:00:00 EET 3921, ora=12:30:00}])

@@ -1,5 +1,6 @@
 package repo;
 
+import domain.Client;
 import domain.Entity;
 
 import java.util.List;
@@ -35,4 +36,5 @@ public interface IRepository<ID,E  > {
     List<E> findAll();
     E findOne(ID id);
 
+    Object findOne(Client client);
 }

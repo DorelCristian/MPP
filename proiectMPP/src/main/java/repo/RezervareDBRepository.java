@@ -1,4 +1,5 @@
 package repo;
+import domain.Client;
 import domain.Entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -72,6 +73,26 @@ public class RezervareDBRepository implements IRepository{
 
     @Override
     public List findAll() {
+/*logger.traceEntry();
+        Connection con=dbUtils.getConnection();
+        List<Rezervare> rezervari=new ArrayList<>();
+        try(PreparedStatement preStmt=con.prepareStatement("select * from Rezervare")) {
+            try(ResultSet result=preStmt.executeQuery()) {
+                while (result.next()) {
+                    int id_client = result.getInt("id_client");
+                    Client client = ClientDBRepository.findOne();
+                    int id_cursa = result.getInt("id_cursa");
+                    int locuri = result.getInt("locuri");
+                    Rezervare rezervare = new Rezervare(id_client, id_cursa, locuri);
+                    rezervari.add(rezervare);
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.out.println("Error DB "+ex);
+        }
+        logger.traceExit(rezervari);
+        return rezervari;*/
         return null;
     }
 

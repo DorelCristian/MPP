@@ -3,9 +3,11 @@ import java.sql.Time;
 import java.util.Date;
 import domain.Client;
 import domain.Cursa;
+import domain.Rezervare;
 import repo.ClientDBRepository;
 import repo.ClientRepo;
 import repo.CursaDBRepository;
+import repo.RezervareDBRepository;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -44,6 +46,15 @@ public class Main {
         Cursa cursa=new Cursa("Cluj",date1,time);
         cursaDBRepository.save(cursa);
         System.out.println("Toate cursele din db");
+        List<Cursa> curse=cursaDBRepository.findAll();
+        for(Cursa c:curse)
+            System.out.println(c);
+
+        RezervareDBRepository rezervareDBRepository=new RezervareDBRepository(props);
+        Rezervare rezervare=new Rezervare(3,client,cursa);
+        Rezervare rezervare1=new Rezervare(4,client,cursa);
+        rezervareDBRepository.save(rezervare);
+        rezervareDBRepository.save(rezervare1);
 
 
 
