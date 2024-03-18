@@ -1,4 +1,5 @@
 package repo;
+import domain.Client;
 import domain.Entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -98,6 +99,11 @@ public class CursaDBRepository implements IRepository{
 
     @Override
     public Object findOne(Object o) {
+        return null;
+    }
+
+    @Override
+    public Object findOne(Client client) {
         return null;
     }
 }
